@@ -5,19 +5,19 @@ Local File Inclusion &amp; Log Poisoning Enumeration Tool.
 
 Compiled Version for Linux.
 
-*__Example Usage:__*
+# Example Usage:
 
-# Identify LFI (extensive search) on a Linux OS: 
+*__Identify LFI (extensive search) on a Linux OS:__* 
 $ ./remlocLister -u http://url/?page= -i 2 -os "linux" -c "Cookies" 
 
-# Identify potential vulnerable parameter for LFI: 
+*__Identify potential vulnerable parameter for LFI:__* 
 $ ./remlocLister -u http://url/ -os "linux" -c "Cookies" -p 
 
-# Identify potential log files: 
+*__Identify potential log files:__* 
 $ ./remlocLister -u http://url/?page= -os "linux" -c "Cookies" -log 
 
-# Identify LFI adding NullByte bypass: 
+*__Identify LFI adding NullByte bypass:__* 
 $ ./remlocLister -u http://url/?page= -i 1 -os "linux" -c "Cookies" -n 
 
-# Identify LFI using a different User-Agent Header: 
+*__Identify LFI using a different User-Agent Header:__* 
 $ ./remlocLister -u http://url/?page= -i 1 -os "linux" -c "Cookies" -uA "User-Agent" 
