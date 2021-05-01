@@ -7,17 +7,17 @@ Compiled Version for Linux.
 
 # Example Usage:
 
-*__Identify LFI (extensive search) on a Linux OS:__* 
+*__Identify LFI (extensive search) on a Linux OS:__* \
 $ ./remlocLister -u http://url/?page= -i 2 -os "linux" -c "Cookies" 
 
-*__Identify potential vulnerable parameter for LFI:__* 
+*__Identify potential vulnerable parameter for LFI:__* \
 $ ./remlocLister -u http://url/ -os "linux" -c "Cookies" -p 
 
-*__Identify potential log files:__* 
+*__Identify potential log files:__* \
 $ ./remlocLister -u http://url/?page= -os "linux" -c "Cookies" -log 
 
-*__Identify LFI adding NullByte bypass:__* 
+*__Identify LFI adding NullByte bypass:__* \
 $ ./remlocLister -u http://url/?page= -i 1 -os "linux" -c "Cookies" -n 
 
-*__Identify LFI using a different User-Agent Header:__* 
+*__Identify LFI using a different User-Agent Header:__* \
 $ ./remlocLister -u http://url/?page= -i 1 -os "linux" -c "Cookies" -uA "User-Agent" 
